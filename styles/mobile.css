@@ -1,0 +1,106 @@
+ html, body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+ body {
+    display: grid;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    grid-template-areas: 
+            "b1 b1 b1 b1 b1 b1 b1 b1"
+            "b2 b3 b3 b3 b3 b3 b3 b4"
+            "b2 b3 b3 b3 b3 b3 b3 b4" 
+            "b2 b3 b3 b3 b3 b3 b3 b4"
+            "b2 b3 b3 b3 b3 b3 b3 b4"
+            "b2 b3 b3 b3 b3 b3 b3 b4"
+            "b2 b5 b5 b5 b5 b5 b5 b4"
+            "b6 b6 b6 b6 b6 b6 b6 b4"
+            ;
+  }
+
+div {
+    color:black;
+    outline: 1px solid black;
+    margin: 0;
+    padding: 0;
+ }
+
+.box1 {
+    grid-area: b1;    
+  }
+.box2 {
+    grid-area: b2;
+    background: #f8d4b5;
+  }
+.box3 {
+    grid-area: b3;
+    background: white;
+  }
+.box4 { 
+    grid-area: b4;
+    background: #f8d4b5;
+  }
+.box5 {
+    grid-area: b5;
+    background: rgb(195, 255, 162);
+  }
+.box6 {
+    grid-area: b6;
+}
+
+.box1,.box6 { 
+  background: rgb(135, 135, 255);   
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-areas:
+            ". . . . . . . . . . . . ."
+            ". . . . . . T T T T T T ."
+            ". . . . . . T T T T T T ."
+            ". M M . . . T T T T T T ."
+            ". . . . . . T T T T T T ."
+            ". . . . . . T T T T T T ."
+            ". . . . . . . . . . . . ."
+            ;
+}
+
+.textbox {
+  grid-area: T;
+  outline: none;
+}
+.mark {
+    grid-area: M;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    text-align: center;
+    border: none;
+    color: black;
+    font-family: Helvetica;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .imgbox{
+    position: relative;
+    top: 0%; 
+    left: 0%;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
